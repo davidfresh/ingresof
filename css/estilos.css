@@ -1,0 +1,93 @@
+a
+{
+	color: #22BCE0;
+
+}
+body
+{
+	background: #EEEEEE;
+	font-family: Arial;
+	font-size: 16px;
+}
+footer
+{
+	background: #22BCE0;
+	color: rgba(255,255,255,0.7);
+	padding: 1em;
+	margin: 1em 0;
+	text-align: center;
+}
+footer p:first-child
+{	
+	margin-bottom: 0;
+}
+footer p:last-child
+{
+	margin-top: 0;
+}
+footer p:last-child:after
+{
+	content: " -";
+}
+footer p:last-child:before
+{
+	content: "- ";
+}
+header
+{
+	background: #344B54;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+	position: relative;
+}
+
+header h1
+{
+	font-size: 2.3em;
+	font-weight: normal;
+	margin: 0 70px 0 0;
+}
+
+
+.imagen_item img
+{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	
+}
+
+div
+{
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+    position: relative;
+	
+}
+
+.caja a
+{
+
+color: #FF8000;
+font-size: 25px;
+
+
+}
+.caja
+{
+text-align: center;
+padding-bottom: 3em;
+}
+
+
+
+
+
+
+
+
