@@ -1,17 +1,77 @@
 @import "normalize.styl"
 @import "fonts.styl"
-
+@import url(http://fonts.googleapis.com/css?family=Istok+Web)
  azul = #00A0B0
  rojo = #EB6841
  azul_claro = #3B404C
  cafe = #6A4A3C
  
+
+
+
+@keyframes baner 
+ 0%  
+   left 0% 
+ 20%  
+   left 0% 
+ 25%  
+   left -100% 
+ 45%  
+   left -100% 
+ 50%  
+   left -200% 
+ 70%  
+   left -200% 
+ 75%  
+   left -300% 
+ 95%  
+   left -300% 
+ 100%  
+   left -400% 
+
+body figure  
+  margin 0 
+  background #101010
+  font-family Istok Web sans-serif
+  font-weight 100
+  
+div#captioned-gallery 
+  width 100% 
+  overflow hidden
+
+figure.slider  
+  position relative 
+  width 500%
+  font-size 0 
+  -webkit-animation 30s baner infinite 
+  
+figure.slider figure  
+  width 20% 
+  height auto
+  display inline-block  
+  position inherit 
+
+figure.slider img 
+  width 100% 
+  height auto 
+
+figure.slider figure figcaption 
+  position absolute 
+  bottom 0
+  background rgba(0,0,0,0.4)
+  color #fff
+  width 100%
+  font-size 2rem 
+  padding .6rem 
+
+
 a
  text-decoration none
     
 body 
  background white
  font-size 16px
+ margin 0
         
 h1 
  color azul
@@ -66,7 +126,8 @@ footer
 .banner 
     &.small
         width 320px
-        margin 0 .5em
+        margin-left 1em
+        
        
         
 .centrado
