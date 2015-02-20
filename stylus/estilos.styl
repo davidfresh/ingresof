@@ -1,10 +1,16 @@
 @import "normalize.styl"
 @import "fonts.styl"
 @import url(http://fonts.googleapis.com/css?family=Istok+Web)
+@import url(http://fonts.googleapis.com/css?family=Montserrat)
+@import url(http://fonts.googleapis.com/css?family=Marko+One)
+@import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption)
+@import url(http://fonts.googleapis.com/css?family=Esteban)
+
+
 
  azul = #00A0B0
  rojo = #EB6841
- azul_claro = #3B404C
+ azul_claro = #0097A7 
  cafe = #6A4A3C
  
 #NavStrip 
@@ -71,37 +77,6 @@
    display block
 #NavStrip label:active #nav
    display none
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 animacion(parametro)
  -webkit-animation parametro
@@ -174,12 +149,22 @@ body
  font-size 16px
  margin 0
  
+.descript
+ color white
+ font-size 1.1em
+ font-family PT Serif Caption
+ text-decoration  none
+ text-align left
+ 
+.description
+ background azul
         
 h1 
- color azul
- font-size 1.2em
+ color azul_claro
+ font-size 1.7em
+ font-family Istok Web
  font-weight normal
- margin-left 4em
+ text-align center
 
  
 .imagen
@@ -248,9 +233,7 @@ footer
     margin-rigth 2em
     
         
-.description
-    font-size 1.2em
-    background azul
+
       
 #contac
     background rojo
@@ -262,7 +245,9 @@ footer
     font-size 2.5em
     display inline-block
     margin 0 0.5em .5em .5em
-        
+#contac a
+    color white
+            
 .plataforma
     border-radius 3px
     font-size 1.2em
@@ -270,10 +255,17 @@ footer
     margin 0 3em 
     padding 0.5em 1em 0 1em
     width 152px
-    
+    list-style none
+.plataforma p
+    font-size 1.1em
+    font-family Istok Web
+    font-weight bold 
+    color white
+   
 .icon-display
     font-size 5em
-    padding 0 .3em  
+    padding 0 .3em
+     
 
 .cursos
     border-radius 3px
@@ -282,6 +274,12 @@ footer
     margin 0 3em 
     padding 0.5em 1em 0 1em
     width 152px
+    list-style none
+.cursos p
+    font-size 1.1em
+    font-family Istok Web
+    font-weight bold
+    color white 
     
 .icon-books
     font-size 5em
@@ -314,7 +312,7 @@ footer
 .redes a
   color white           
   
- @media screen and (min-width:700px)
+ @media screen and (min-width:480px)
 
  .banner
      &.medium
@@ -324,28 +322,55 @@ footer
  .banner
      img
          width 100%
-         
+ #logo
+     width         
  h1
      color azul
      text-align center
-    
-            
-
-       
-    
+     font-family Istok Web 
+     font-size 2.8em
+ .promos
+     margin 20px 0 0
+     padding 0
+     display flex
+     justify-content space-around
+     text-align center
+           
  .plataforma
-     background red
-     right 0
-      position  absolute
+     background azul
+     margin 0
+     display inline-block
+     max-width 152px
+     width auto
+     justify-content space-around
      
+          
  .cursos
-    background red
+    background rojo
+    margin 0
+    max-width 152px
+    display inline-block
     
+ .redes
+   margin 0 20em 0 0
+
+   border-right 1px solid white
+   
+ .info
+    right 9em
     
+      
 @media screen and (min-width:1000px)
  
  body
-     background red   
+     background white
+ .redes
+   margin 0 25em 0 0
+
+   border-right 1px solid white
+   
+ .info
+    right 13em
     
      
         
