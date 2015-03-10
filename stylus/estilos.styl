@@ -12,6 +12,65 @@
  rojo = #EB6841
  azul_claro = #0097A7 
  cafe = #6A4A3C
+ 
+ // tabla de curso en linea
+  .container th h1 
+    font-weight  bold
+    font-size  1em
+    font-family Istok Web 
+    text-align  center
+    color  cafe
+  .container td 
+    font-weight normal
+    font-size 1em
+    padding .5em
+    -webkit-box-shadow 0 2px 2px -2px #0E1119
+    -moz-box-shadow 0 2px 2px -2px #0E1119
+    box-shadow 0 2px 2px -2px #0E1119
+
+  .container 
+    text-align left
+    overflow hidden
+    width 80%
+    margin 0 auto
+    display table
+    padding 0 0 8em 0
+  
+  .container td, .container th 
+    padding-bottom  2%
+    padding-top  2%
+    padding-left 2%  
+  .container tr:nth-child(odd) 
+    background-color azul
+  .container tr:nth-child(even) 
+    background-color azul_claro
+  .container th 
+    background-color rojo
+  .container td:first-child 
+    color white
+    
+  .container tr:hover 
+   background-color  azul
+   
+   -webkit-box-shadow  0 6px 6px -6px #0E1119
+   -moz-box-shadow  0 6px 6px -6px #0E1119
+   box-shadow  0 6px 6px -6px #0E1119
+  
+  .container td:hover 
+   background-color  #FFF842
+   color  #403E10
+   font-weight  bold
+  
+   box-shadow  #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px
+   transform  translate3d(6px, -6px, 0)
+   transition-delay  0s
+   transition-duration  0.4s
+   transition-property  all
+   transition-timing-function line
+
+ 
+        
+  
  //menu
 #NavStrip 
   position  relative
@@ -437,7 +496,8 @@ h3
  h2
    color azul
    font-size 2em
-   font-family Istok Web     
+   font-family Istok Web 
+   text-align center    
  .plata
    line-height 2em
    word-spacing .3em
